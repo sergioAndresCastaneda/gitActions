@@ -8,7 +8,6 @@ credentialsData.forEach((user) => {
         const login = new loginPage(page);    
         await page.goto(`${user.path}`);
         await login.loginWhitCredentials(user.username, user.password);
-        await page.screenshot({ path: 'captcha-error.png', fullPage: true }); // Captura de pantalla del error de captcha
         await takeScreenshot(page, `Screenshot de ${user.screenshot}`);
         await page.close();
     });
