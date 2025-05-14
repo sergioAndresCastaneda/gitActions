@@ -23,7 +23,7 @@ const user1 = new User("sergio");
 console.log(user1.greet());
 
 console.log(Math.PI);
-console.log(Math.E);
+
 
 
 
